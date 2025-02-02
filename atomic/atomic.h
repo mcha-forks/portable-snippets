@@ -192,9 +192,9 @@ typedef psnip_int32_t psnip_atomic_int32;
 #define psnip_atomic_int64_compare_exchange(object, expected, desired) \
   __atomic_compare_exchange_n(object, expected, desired, 0, __ATOMIC_SEQ_CST, __ATOMIC_SEQ_CST)
 #define psnip_atomic_int64_add(object, operand) \
-  __atomic_add_fetch(object, operand, __ATOMIC_SEQ_CST)
+  __atomic_fetch_add(object, operand, __ATOMIC_SEQ_CST)
 #define psnip_atomic_int64_sub(object, operand) \
-  __atomic_sub_fetch(object, operand, __ATOMIC_SEQ_CST)
+  __atomic_fetch_sub(object, operand, __ATOMIC_SEQ_CST)
 #define psnip_atomic_fence() \
   __atomic_thread_fence(__ATOMIC_SEQ_CST)
 
