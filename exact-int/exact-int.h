@@ -42,7 +42,7 @@
 #  endif
 
 #  if !defined(PSNIP_EXACT_INT_HAVE_STDINT)
-#    if defined(_STDC_VERSION__) && (__STDC_VERSION__ >= 199901L)
+#    if defined(__STDC_VERSION__) && (__STDC_VERSION__ >= 199901L)
 #      define PSNIP_EXACT_INT_HAVE_STDINT
 #    elif defined(__has_include)
 #      if __has_include(<stdint.h>)
