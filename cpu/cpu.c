@@ -17,7 +17,7 @@
 #include <assert.h>
 
 #if defined(_WIN32)
-#  include <Windows.h>
+#  include <windows.h>
 #  define PSNIP_CPU__IMPL_WIN32
 #elif defined(unix) || defined(__unix__) || defined(__unix)
 #  include <unistd.h>

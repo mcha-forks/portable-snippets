@@ -11,7 +11,7 @@
 #  include <unistd.h>
 #  define sleep_seconds(n) sleep(n)
 #else
-#  include <Windows.h>
+#  include <windows.h>
 #  define sleep_seconds(n) Sleep((n) * 1000)
 #endif
 

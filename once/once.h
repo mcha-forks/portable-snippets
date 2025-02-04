@@ -40,7 +40,7 @@
 #endif
 
 #if !defined(PSNIP_ONCE_BACKEND) && defined(_WIN32) && (!defined(WINVER) || (defined(WINVER) && (WINVER >= 0x0600)))
-#  include <Windows.h>
+#  include <windows.h>
 #  define PSNIP_ONCE_BACKEND PSNIP_ONCE__BACKEND_WIN32
 #endif
 

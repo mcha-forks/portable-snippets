@@ -253,7 +253,7 @@ psnip_atomic_int32_store(psnip_atomic_int32* object, psnip_int32_t desired) {
 
 #elif PSNIP_ATOMIC_IMPL == PSNIP_ATOMIC_IMPL_MS
 
-#include <Windows.h>
+#include <windows.h>
 
 typedef long long volatile psnip_atomic_int64;
 typedef long volatile psnip_atomic_int32;
